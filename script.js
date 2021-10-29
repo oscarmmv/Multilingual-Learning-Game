@@ -42,8 +42,8 @@ function changeLang() {
         questionList = wordList_gr;
         start();
     }
-    if(x == 'german_list') {
-        questionList = wordList_ru;
+    if(x == 'italian_list') {
+        questionList = wordList_it;
         start();
     }
 }
