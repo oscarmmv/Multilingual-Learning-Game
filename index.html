@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learn French</title>
+    <link rel="icon" href="Assets/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1 class = "question" id="title"></h1>
+            <ul>
+                <input class = "button" type="button" value="" id="myButton1" onclick="isWrong1(); playWrongSound();"></input> 
+                <input class = "button" type="button" value="" id="myButton2" onclick="isWrong2(); playWrongSound();"></input> 
+                <input class = "button" type="button" value="" id="myButton3" onclick="isWrong3(); playWrongSound();"></input> 
+                <input class = "button" type="button" value="" id="myButton4" onclick="isWrong4(); playWrongSound();"></input> 
+                <input class = "button" type="button" value="" id="myButton5" onclick="isCorrect(); playCorrectSound();"></input> 
+                <audio id="audioWrong" src="Assets/wrong.wav"></audio>
+                <audio id="audioCorrect" src="Assets/correct.wav"></audio>
+            </ul>
+            <div class="results" id="score" ></div>
+            <select id="lang" name="scale">
+                <option value="french_list">French</option>
+                <option value="spanish_list">Spanish</option>
+                <option value="chinese_list">Chinese</option>
+                <option value="japanese_list">Japanese</option>
+                <option value="italian_list">Italian</option>
+                <option value="german_list">German</option>
+                <option value="hindi_list">Hindi</option>
+                <option value="russian_list">Russian</option>
+            </select>
+            <button type="button" onclick="changeLang()">Select</button>
+                <br>
+            <button class ="scoreCompile" id="compile" onclick="compileScore();">Compile Score</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
